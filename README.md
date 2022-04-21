@@ -34,6 +34,26 @@ PORT   STATE SERVICE REASON
 
 <img src="https://github.com/El-Palomo/POSITON-HTB/blob/main/Poison1.jpg" width=80% />
 
+## 3. Enumeración
+
+- Enumeración HTTP.
+
+```
+┌──(root㉿kali)-[~/HT/POISON]
+└─# gobuster dir -u http://10.129.1.254/ -w /root/SecLists/Discovery/Web-Content/big.txt -t 80 -x .php,.html,.txt
+```
+<img src="https://github.com/El-Palomo/POSITON-HTB/blob/main/Poison2.jpg" width=80% />
+
+- Resaltan los archivos phpinfo.php, ini.php, info.php.
+
+<img src="https://github.com/El-Palomo/POSITON-HTB/blob/main/Poison3.jpg" width=80% />
+
+- Nos enfrentamos a un FREEBSD y un ALLOW_URL_FOPEN
+
+<img src="https://github.com/El-Palomo/POSITON-HTB/blob/main/Poison4.jpg" width=80% />
+
+
+
 
 
 
